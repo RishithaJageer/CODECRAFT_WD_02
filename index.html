@@ -15,67 +15,33 @@
       margin: 0;
       color: #333;
     }
-
     .container {
       background: #fff;
       padding: 30px;
       border-radius: 15px;
       text-align: center;
-      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
       width: 320px;
     }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #023e8a;
-    }
-
     #display {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      font-weight: bold;
-      color: #0077b6;
+      font-size: 2em;
+      margin: 20px 0;
     }
-
-    .buttons button {
+    button {
       padding: 10px 20px;
       margin: 5px;
       border: none;
       border-radius: 8px;
-      font-size: 16px;
       cursor: pointer;
-      transition: 0.3s;
+      font-size: 1em;
     }
-
-    .start { background: #38b000; color: #fff; }
-    .pause { background: #ffba08; color: #fff; }
-    .reset { background: #d62828; color: #fff; }
-    .lap { background: #0077b6; color: #fff; }
-
-    .buttons button:hover {
-      opacity: 0.9;
-      transform: scale(1.05);
-    }
-
-    #laps {
-      margin-top: 20px;
-      text-align: left;
-      max-height: 150px;
-      overflow-y: auto;
-    }
-
-    #laps p {
-      background: #f1f5f9;
-      padding: 8px;
-      border-radius: 6px;
-      margin: 5px 0;
-      font-size: 14px;
-    }
+    .start { background: #4caf50; color: white; }
+    .pause { background: #ff9800; color: white; }
+    .reset { background: #f44336; color: white; }
+    .lap { background: #2196f3; color: white; }
   </style>
 </head>
 <body>
-
   <div class="container">
     <h1>Stopwatch</h1>
     <div id="display">00:00:00</div>
@@ -87,6 +53,7 @@
     </div>
     <div id="laps"></div>
   </div>
+
   <script src="app.js"></script>
 </body>
 </html>
